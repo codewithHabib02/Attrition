@@ -7,7 +7,7 @@ scale=joblib.load('scale.pkl')
 le=joblib.load('encoder.pkl')
 trained=joblib.load('columns.pkl')
 
-df=pd.read_csv(r"C:\Users\Habibulie\Desktop\project_root\Attrition\WA_Fn-UseC_-HR-Employee-Attrition.csv")
+df=pd.read_csv("Attrition\WA_Fn-UseC_-HR-Employee-Attrition.csv")
 x=df.drop(columns='Attrition',errors='ignore')
 user_input={}
 for col in x.columns:
